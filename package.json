@@ -1,0 +1,20 @@
+{
+  "name": "codstattracker",
+  "version": "1.0.0",
+  "description": "Track stats for Call of Duty",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "Steven Burke",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  }
+}
